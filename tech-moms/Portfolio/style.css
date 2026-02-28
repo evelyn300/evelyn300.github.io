@@ -1,0 +1,66 @@
+body {
+    background-image: url("wellness1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+header {
+    background-image: url("leafs2.jpg");
+    background-size: cover;
+    background-position: center;
+    color: rgb(242, 241, 238);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    border-radius: 12px;
+
+
+}
+
+footer {
+    background-color: rgba(189, 160, 32, 0.993);
+    color: rgb(0, 0, 0);
+}
+
+.centered {
+    text-align: center;
+}
+
+.intro {
+    max-width: 400px;
+    text-align: left;
+}
+
+.header-image {
+    border-radius: 32px;
+}
+
+.heading-text {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-section {
+    max-width: 500px;
+    margin: auto;
+    padding: 50px;
+
+}
+
+.example-dive-child {
+    background-color: rgba(70, 61, 15, 0.623);
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.sub-sections {
+    background-color: rgba(19, 39, 24, 0.432);
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
