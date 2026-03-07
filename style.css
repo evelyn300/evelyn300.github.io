@@ -1,5 +1,5 @@
 body {
-    background-image: url("wellness1.jpg");
+    background-image: url("calm1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -8,25 +8,19 @@ body {
     font-size: 20px;
 }
 
+
 header {
     background-image: url("leafs2.jpg");
     background-size: cover;
     background-position: center;
-    color: rgba(242, 241, 238, 0.473);
+    color: rgba(242, 241, 238, 0.384);
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 400px;
     border-radius: 12px;
-
-
-}
-
-header {
-    font-family: 'Cinzel', serif;
-    font-size: 4rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
+    font-size: 65px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -40,39 +34,60 @@ footer {
     text-align: center;
 }
 
+
 .intro {
     max-width: 400px;
     text-align: left;
 }
 
+
 .header-image {
     border-radius: 32px;
 }
 
+
 .heading-text {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 
 .main-section {
     max-width: 500px;
     margin: auto;
     padding: 50px;
 
+
+}
+
+.example-dive-child {
+    background-color: rgba(0, 0, 0, 0.623);
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 
 .sub-sections {
-    background-color: rgba(19, 39, 24, 0.432);
-    color: rgba(255, 255, 255, 0.774);
+    background-color: rgba(19, 39, 24, 0.603);
+    color: white;
     padding: 20px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 
-    .column {
-        float: left;
-        padding: 10px;
-    }
+}
 
-    .left,
-    .right {
-        width: 25%;
-    }
+.sections {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+
+}
