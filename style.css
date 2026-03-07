@@ -35,12 +35,6 @@ footer {
 }
 
 
-.intro {
-    max-width: 400px;
-    text-align: left;
-}
-
-
 .header-image {
     border-radius: 32px;
 }
@@ -52,11 +46,9 @@ footer {
 
 
 .main-section {
-    max-width: 500px;
+    max-width: 800px;
     margin: auto;
     padding: 50px;
-
-
 }
 
 .example-dive-child {
@@ -76,8 +68,6 @@ footer {
     color: white;
     padding: 20px;
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
     border-radius: 10px;
     overflow: hidden;
     border-radius: 10px;
@@ -89,5 +79,8 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding: 40px;
+}
 
+.right {
+    margin-left: 30px;
 }
