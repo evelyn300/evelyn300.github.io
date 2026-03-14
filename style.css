@@ -1,78 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap');
+
+/* ── BASE ── */
 body {
-    background-image: url("wellness1.jpg");
+    background-image: url("calm1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100vh;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #e8e0d5;
+    line-height: 1.8;
 }
 
+/* ── HEADER ── */
 header {
     background-image: url("leafs2.jpg");
     background-size: cover;
     background-position: center;
-    color: rgba(242, 241, 238, 0.473);
+    border-radius: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 400px;
-    border-radius: 12px;
-
-
+    flex-direction: column;
+    height: 240px;
+    margin-bottom: 0;
 }
 
-header {
-    font-family: 'Cinzel', serif;
-    font-size: 4rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
+.heading-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    color: #d4b896;
+    letter-spacing: 6px;
+    font-size: 90px;
+    line-height: 1;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
 }
 
-
-footer {
-    background-color: rgba(189, 160, 32, 0.993);
-    color: rgb(0, 0, 0);
+.header-sub {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: rgba(212, 184, 150, 0.7);
+    margin-top: 10px;
 }
 
+/* ── QUOTE BANNER ── */
+.quote-banner {
+    background-color: rgba(19, 39, 24, 0.5);
+    text-align: center;
+    padding: 28px 40px;
+    margin-bottom: 10px;
+}
 
+.quote-banner p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 22px;
+    color: #d4b896;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+
+/* ── LAYOUT ── */
 .centered {
     text-align: center;
 }
 
-.intro {
-    max-width: 400px;
-    text-align: left;
-}
-
-.header-image {
-    border-radius: 32px;
-}
-
-.heading-text {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .main-section {
-    max-width: 500px;
-    margin: auto;
-    padding: 50px;
-
+    padding: 30px 0;
 }
 
+/* ── PHOTO SPOTS ── */
+.photo-spot {
+    display: block;
+    width: 75%;
+    max-width: 900px;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    margin: 30px auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
 
+/* ── IMAGE TAG PHOTOS ── */
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.image-container img {
+    width: 75%;
+    max-width: 900px;
+    height: 320px;
+    border-radius: 16px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+/* Photo classes */
+.photo-calm2 {
+    background-image: url("calm2.jpg");
+}
+
+.photo-light4 {
+    background-image: url("light4.jpg");
+}
+
+.photo-smoke2 {
+    background-image: url("smoke2.avif");
+}
+
+.photo-sage1 {
+    background-image: url("sage1.avif");
+}
+
+.photo-suana1 {
+    background-image: url("suana1.jpg");
+}
+
+.photo-nature {
+    background-image: url("calm2.jpg");
+}
+
+/* ── SECTIONS ── */
 .sub-sections {
-    background-color: rgba(19, 39, 24, 0.432);
-    color: rgba(255, 255, 255, 0.774);
-    padding: 20px;
+    background-color: rgba(19, 39, 24, 0.62);
+    color: #e8e0d5;
+    padding: 40px 50px;
+    margin: 16px 40px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+}
+
+.sub-sections h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 32px;
+    color: #d4b896;
+    letter-spacing: 2px;
     margin-bottom: 20px;
+}
 
-    .column {
-        float: left;
-        padding: 10px;
-    }
+.sub-sections h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 26px;
+    color: #d4b896;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
 
-    .left,
-    .right {
-        width: 25%;
-    }
+.sub-sections p,
+.sub-sections li {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    line-height: 1.9;
+    color: #ddd6cc;
+}
+
+.sub-sections ul {
+    padding-left: 20px;
+}
+
+.sub-sections li {
+    margin-bottom: 10px;
+}
+
+.sub-sections em {
+    color: #d4b896;
+}
+
+/* ── THE SCIENCE SPEAKS — ARTICLE LINKS ── */
+.read-more {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(212, 184, 150, 0.2);
+    text-align: center;
+}
+
+.read-more p {
+    font-style: italic;
+    color: #d4b896;
+    margin-bottom: 16px;
+}
+
+/* centered list with no bullets */
+.articles-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.articles-list li {
+    margin-bottom: 14px;
+}
+
+/* article links styled differently from location links — softer, more editorial */
+.article-link {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #d4b896;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(212, 184, 150, 0.25);
+    padding-bottom: 2px;
+    transition: border-color 0.3s, opacity 0.3s;
+}
+
+.article-link:hover {
+    border-color: #d4b896;
+    opacity: 0.8;
+}
+
+/* ── STEPS ROW ── */
+.steps-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+.step {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 18px 24px;
+    min-width: 90px;
+}
+
+.step-icon {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.step p {
+    font-size: 13px !important;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #d4b896 !important;
+    margin: 0;
+}
+
+.step small {
+    font-size: 11px;
+    opacity: 0.7;
+}
+
+.step-arrow {
+    font-size: 20px;
+    color: rgba(212, 184, 150, 0.4);
+}
+
+/* ── SECTIONS ROW ── */
+.sections {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    gap: 0;
+}
+
+.right {
+    margin-left: 0;
+}
+
+/* ── UTAH LOCATIONS GRID ── */
+.location-intro {
+    font-style: italic;
+    opacity: 0.8;
+    margin-bottom: 28px;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 10px;
+}
+
+.location-card {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid rgba(212, 184, 150, 0.15);
+    transition: transform 0.3s;
+}
+
+.location-card:hover {
+    transform: translateY(-3px);
+}
+
+.location-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 22px;
+    color: #d4b896;
+    font-weight: 300;
+    margin-bottom: 4px;
+}
+
+.location-detail {
+    font-size: 11px !important;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(212, 184, 150, 0.6) !important;
+    margin-bottom: 10px;
+}
+
+.location-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #d4b896;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(212, 184, 150, 0.3);
+    padding-bottom: 2px;
+    transition: border-color 0.3s;
+}
+
+.location-link:hover {
+    border-color: #d4b896;
+}
+
+/* ── ROW ── */
+.row {
+    margin: 0;
+}
+
+/* ── FOOTER ── */
+footer {
+    background-color: rgba(19, 39, 24, 0.8);
+    color: rgba(212, 184, 150, 0.7);
+    padding: 30px 40px;
+    margin-top: 30px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+footer a {
+    color: #d4b896;
+    text-decoration: none;
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
+
+/* ── EXAMPLE DIV ── */
+.example-dive-child {
+    background-color: rgba(0, 0, 0, 0.623);
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
